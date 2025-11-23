@@ -11,7 +11,7 @@ export class RelatorioVendas {
         console.log('Total de vendas | ' + this.totalVendas())
         console.log('Ticket médio por venda | ', this.TicketMediovenda())
         console.log("Total de vendas de livros | " + this.ValorMedioVendaPorcategoria("livros"))
-  
+
 
     }
 
@@ -30,18 +30,18 @@ export class RelatorioVendas {
         return Number(ticketMedio.toFixed(2))
     }
 
-    private ValorMedioVendaPorcategoria(categoria:string): number{
+    private ValorMedioVendaPorcategoria(categoria: string): number {
         const valorInicial = 0
         const vendasPorCategoria = this.vendas
-        .filter(v => v.categoria === categoria)
-        .reduce((acumulador, itemAtual) => acumulador + itemAtual.valor, valorInicial)
-       return Number(vendasPorCategoria.toFixed(2))
+            .filter(v => v.categoria === categoria)
+            .reduce((acumulador, itemAtual) => acumulador + itemAtual.valor, valorInicial)
+        return Number(vendasPorCategoria.toFixed(2))
     }
 
 
     // Ticket médio por forma de pagamento
-    
+
     // Produto com maior lucro absoluto
 
-    
+
 }
