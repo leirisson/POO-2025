@@ -38,10 +38,4 @@ export class RelatorioVendas {
         return Number(vendasPorCategoria.toFixed(2))
     }
 
-
-    // Ticket médio por forma de pagamento
-
-    // Produto com maior lucro absoluto
-
-
 }
