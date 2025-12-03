@@ -1,11 +1,18 @@
 from classes.Livro import Livro
 
-
+livros = []
 
 def main():
-    livro1 = Livro('Escreveu, mas não  leu', 'Leirisson Santos', 2016)
-    descricao = livro1.descricao()
-    print(descricao)
+    for i in range(1,3):
+        
+        titulo = input("titulo: ")
+        autor = input("autor: ")
+        ano_publicacao = input("ano de publicação: ")
+        livro = Livro(titulo, autor, ano_publicacao)
+        livros.append(livro)
+
+    for livro in livros:
+        print(livro.descricao())
     
     
 if __name__ == "__main__":
