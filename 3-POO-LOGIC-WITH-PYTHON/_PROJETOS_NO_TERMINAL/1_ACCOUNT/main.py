@@ -55,7 +55,7 @@ def main():
                     print("opção invalida.")
                     continue
                 
-        except BaseException as e:
+        except BusinessException as e:
             print(f"🔴 Erro: {e}")
 
 
