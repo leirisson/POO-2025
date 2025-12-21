@@ -16,8 +16,6 @@ account_service = AccountService(create_account, withdraw_account, account_repos
 #cobntroller
 account_controller = AccountController(account_service)
 
-
-
 while True:
     print("\n=== SISTEMA BANCÁRIO CLI ===")
     print("1 - Criar conta")
